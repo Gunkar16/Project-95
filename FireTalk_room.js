@@ -31,7 +31,7 @@ console.log(randomColor);
           }
     );
    localStorage.setItem("RoomName",RoomName);
-   //window.location="FireTalk_page.html" ;
+   window.location="FireTalk_page.html" ;
 }
 function getData() {firebase.database().ref("/").on('value',function(snapshot) {document.getElementById("output").innerHTML ="";snapshot.forEach(function(childSnapshot) {childKey =childSnapshot.key;
  Room_names = childKey;
